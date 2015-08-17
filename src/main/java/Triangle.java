@@ -23,6 +23,10 @@ public class Triangle{
 
   public String triangleType(){
     String result = "Triangles";
+    if((mSideA == mSideB) && (mSideC == mSideB)){
+      result = "equilateral";
+    }
+//    else if(())
     return result;
   }
 }
