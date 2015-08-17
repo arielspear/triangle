@@ -26,7 +26,9 @@ public class Triangle{
     if((mSideA == mSideB) && (mSideC == mSideB)){
       result = "equilateral";
     }
-//    else if(())
+   else if((mSideA == mSideB) || (mSideB == mSideC)){
+     result = "isosceles";
+   }
     return result;
   }
 }
