@@ -26,5 +26,10 @@ public class TriangleTest {
     Triangle testTriangle = new Triangle(2, 4, 2);
     assertEquals("isosceles", testTriangle.triangleType());
   }
-  
+
+  @Test
+  public void triangleType_whenScalene_scalene(){
+    Triangle testTriangle = new Triangle (2, 3, 4);
+    assertEquals("scalene", testTriangle.triangleType());
+  }
 }
