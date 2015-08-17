@@ -8,4 +8,7 @@ public class Triangle{
     mSideB = sideB;
     mSideC = sideC;
   }
+  public boolean isTriangle(){
+    return true;
+  }
 }
