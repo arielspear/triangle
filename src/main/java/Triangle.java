@@ -29,6 +29,12 @@ public class Triangle{
    else if((mSideA == mSideB) || (mSideB == mSideC)){
      result = "isosceles";
    }
+   else if((mSideA != mSideB) && (mSideA != mSideC) && (mSideB != mSideC)){
+     result = "scalene";
+   }
+   else{
+     result = "Triangle type does not exist";
+   }
     return result;
   }
 }
