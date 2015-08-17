@@ -20,4 +20,11 @@ public class TriangleTest {
     Triangle testTriangle = new Triangle (3, 3, 3);
     assertEquals("equilateral", testTriangle.triangleType());
   }
+
+  @Test
+  public void triangleType_whenIsosceles_isosceles(){
+    Triangle testTriangle = new Triangle(2, 4, 2);
+    assertEquals("isosceles", testTriangle.triangleType());
+  }
+  
 }
