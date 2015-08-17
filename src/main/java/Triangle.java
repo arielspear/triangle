@@ -20,4 +20,9 @@ public class Triangle{
       return false;
     }
   }
+
+  public String triangleType(){
+    String result = "Triangles";
+    return result;
+  }
 }
