@@ -23,7 +23,7 @@ public class TriangleTest {
 
   @Test
   public void triangleType_whenIsosceles_isosceles(){
-    Triangle testTriangle = new Triangle(2, 4, 2);
+    Triangle testTriangle = new Triangle(3, 4, 3);
     assertEquals("isosceles", testTriangle.triangleType());
   }
 

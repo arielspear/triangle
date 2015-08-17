@@ -24,9 +24,15 @@ public class App {
       String firstSide = request.queryParams("firstSide");
       String secondSide = request.queryParams("secondSide");
       String thirdSide = request.queryParams("thirdSide");
-    //  String removeVowels = removeVowels(userInput);
+      int firstSideInt = Integer.parseInt(firstSide);
+      int secondSideInt = Integer.parseInt(secondSide);
+      int thirdSideInt = Integer.parseInt(thirdSide);
 
-    //  model.put("removeVowels", removeVowels);
+      Triangle thisTriangle = new Triangle(firstSideInt, secondSideInt, thirdSideInt);
+      String ourType = thisTriangle.triangleType();
+
+
+     model.put("ourType", ourType);
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
   }

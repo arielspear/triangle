@@ -23,18 +23,21 @@ public class Triangle{
 
   public String triangleType(){
     String result = "Triangles";
-    if((mSideA == mSideB) && (mSideC == mSideB)){
-      result = "equilateral";
+    if(isTriangle()){
+      if((mSideA == mSideB) && (mSideC == mSideB)){
+        result = "equilateral";
+      } else if((mSideA == mSideB) || (mSideB == mSideC)){
+         result = "isosceles";
+      } else if((mSideA != mSideB) && (mSideA != mSideC) && (mSideB != mSideC)){
+         result = "scalene";
+      } else{
+         result = "Triangle type does not exist";
+      }
     }
-   else if((mSideA == mSideB) || (mSideB == mSideC)){
-     result = "isosceles";
-   }
-   else if((mSideA != mSideB) && (mSideA != mSideC) && (mSideB != mSideC)){
-     result = "scalene";
-   }
-   else{
-     result = "Triangle type does not exist";
-   }
-    return result;
-  }
+    if(! isTriangle()) {
+      result = "Not a triangle :(";
+    }
+
+  return result;
+}
 }
